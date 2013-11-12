@@ -5,6 +5,8 @@ require 'timecop'
 require 'rack/custom_logger'
 require 'logger'
 
+require File.dirname(__FILE__) + '/spec_helper'
+
 describe Rack::CustomLogger do
 
   app = lambda { |env|

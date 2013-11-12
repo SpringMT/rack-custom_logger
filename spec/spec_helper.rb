@@ -7,5 +7,5 @@ Bundler.require(:default, :test)
 
 $TESTING=true
 $:.unshift File.join(File.dirname(__FILE__), '..', 'lib/rack/')
-require 'rack-custom_logger'
+require 'rack/custom_logger'
 
