@@ -2,6 +2,8 @@
 [![Build Status](https://travis-ci.org/SpringMT/rack-custom_logger.png)](https://travis-ci.org/SpringMT/rack-custom_logger)
 [![Coverage Status](https://coveralls.io/repos/SpringMT/rack-custom_logger/badge.png)](https://coveralls.io/r/SpringMT/rack-custom_logger)
 
+* Change rack default logger
+
 ## Installation
 
 Add this line to your application's Gemfile:
