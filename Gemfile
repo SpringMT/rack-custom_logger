@@ -9,7 +9,7 @@ group :test do
   gem 'coveralls', require: false
   gem 'rspec'
   gem 'timecop'
-  gem 'daily_logger', git: 'git@github.com:SpringMT/daily_logger.git'
+  gem 'daily_logger', git: 'https://github.com/SpringMT/daily_logger.git'
 end
 
 

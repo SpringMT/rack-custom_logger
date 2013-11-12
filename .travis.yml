@@ -6,5 +6,3 @@ rvm:
 matrix:
   allow_failures:
     - rvm: 1.9.3
-before_script:
-  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
