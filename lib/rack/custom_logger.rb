@@ -1,3 +1,5 @@
+require 'logger'
+
 module Rack
   class CustomLogger
     def initialize(app,  custom_logger, level = ::Logger::INFO, custom_logger_formatter=nil)

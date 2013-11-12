@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["today.is.sky.blue.sky@gmail.com"]
   spec.description   = %q{Write a gem description}
   spec.summary       = %q{Write a gem summary}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/SpringMT/rack-custom_logger"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
