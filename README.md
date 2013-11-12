@@ -1,6 +1,6 @@
 # Rack::CustomLogger
-
-TODO: Write a gem description
+[![Build Status](https://travis-ci.org/SpringMT/rack-custom_logger.png)](https://travis-ci.org/SpringMT/rack-custom_logger)
+[![Coverage Status](https://coveralls.io/repos/SpringMT/rack-custom_logger/badge.png)](https://coveralls.io/r/SpringMT/rack-custom_logger)
 
 ## Installation
 
@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+use Rack::CustomLogger, DailyLogger.new("#{log_dir}/test")
+```
 
 ## Contributing
 
