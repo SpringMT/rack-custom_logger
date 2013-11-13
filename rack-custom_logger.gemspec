@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["SpringMT"]
   spec.email         = ["today.is.sky.blue.sky@gmail.com"]
   spec.description   = %q{Write a gem description}
-  spec.summary       = %q{Write a gem summary}
+  spec.summary       = %q{Change rack default logger}
   spec.homepage      = "https://github.com/SpringMT/rack-custom_logger"
   spec.license       = "MIT"
 
