@@ -3,6 +3,7 @@ require 'rack/mock'
 require 'daily_logger'
 require 'timecop'
 require 'rack/custom_logger'
+require 'fileutils'
 require 'logger'
 
 require File.dirname(__FILE__) + '/spec_helper'
@@ -23,22 +24,12 @@ describe Rack::CustomLogger do
   let(:now)       {Time.now.strftime "%Y/%m/%d %H:%M:%S"}
 
   before do
-    Dir.mkdir(log_dir)
-    Timecop.freeze(Time.now)
+    Dir.mkdir log_dir
+    Timecop.freeze Time.now
   end
 
   after do
-    # サブディレクトリを階層が深い順にソートした配列を作成
-    dirlist = Dir::glob(log_dir + "**/").sort do |a,b|
-      b.split('/').size <=> a.split('/').size
-    end
-
-    dirlist.each do |d|
-      Dir::foreach(d) do |f|
-        File::delete(d+f) if ! (/\.+$/ =~ f)
-      end
-      Dir::rmdir(d)
-    end
+    FileUtils.rm_rf log_dir
     Timecop.return
   end
 
