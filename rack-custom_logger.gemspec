@@ -3,11 +3,11 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "rack-custom_logger"
-  spec.version       = '0.0.3'
+  spec.version       = '0.0.4'
   spec.authors       = ["SpringMT"]
   spec.email         = ["today.is.sky.blue.sky@gmail.com"]
-  spec.description   = %q{Write a gem description}
-  spec.summary       = %q{Change rack default logger}
+  spec.description   = %q{Switch rack logger}
+  spec.summary       = %q{Switch rack logger}
   spec.homepage      = "https://github.com/SpringMT/rack-custom_logger"
   spec.license       = "MIT"
 

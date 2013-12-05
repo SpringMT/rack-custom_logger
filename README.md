@@ -2,7 +2,9 @@
 [![Build Status](https://travis-ci.org/SpringMT/rack-custom_logger.png)](https://travis-ci.org/SpringMT/rack-custom_logger)
 [![Coverage Status](https://coveralls.io/repos/SpringMT/rack-custom_logger/badge.png)](https://coveralls.io/r/SpringMT/rack-custom_logger)
 
-* Change rack default logger
+* Switch rack logger
+
+Overwrite env['rack.logger'] in Rack::CustomLogger.
 
 ## Installation
 
@@ -21,7 +23,13 @@ Or install it yourself as:
 ## Usage
 
 ```
-use Rack::CustomLogger, DailyLogger.new("#{log_dir}/test")
+use Rack::CustomLogger, YourOwnLogger.new
+```
+
+### Set Formatter and level
+
+```
+use Rack::CustomLogger, YourOwnLogger.new, YourOwnLogger::INFO, YouOwnSpecialFormatter.new
 ```
 
 ## Contributing
